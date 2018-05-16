@@ -1,23 +1,22 @@
 engkor_dict = {}
-eng = input("¿µ¾î ´Ü¾î :")
-print("»çÀüÀÌ ºñ¾î ÀÖ½À´Ï´Ù.")
-print("´Ü¾î¸¦ Ãß°¡ÇÕ´Ï´Ù.")
-kor = input("ÇÑ±Û ´Ü¾î :")
+eng = input("ì˜ì–´ ë‹¨ì–´ :")
+print("ì‚¬ì „ì´ ë¹„ì–´ ìˆìŠµë‹ˆë‹¤.")
+print("ë‹¨ì–´ë¥¼ ì¶”ê°€í•©ë‹ˆë‹¤.")
+kor = input("í•œê¸€ ë‹¨ì–´ :")
 engkor_dict[eng] = kor
 while True:
-    eng = input("¿µ¾î ´Ü¾î :")
+    eng = input("ì˜ì–´ ë‹¨ì–´ :")
     if(eng == ''):
         break
     else:
         if eng in engkor_dict:
-            print("ÇÑ±Û ´Ü¾î :",engkor_dict[eng])
+            print("í•œê¸€ ë‹¨ì–´ :",engkor_dict[eng])
             continue
         else:
-            print(eng,"´Ü¾î°¡ µî·ÏµÇ¾î ÀÖÁö ¾Ê½À´Ï´Ù.")
-            print("´Ü¾î¸¦ Ãß°¡ÇÕ´Ï´Ù.")
-            kor = input("ÇÑ±Û ´Ü¾î :")
+            print(eng,"ë‹¨ì–´ê°€ ë“±ë¡ë˜ì–´ ìˆì§€ ì•ŠìŠµë‹ˆë‹¤.")
+            print("ë‹¨ì–´ë¥¼ ì¶”ê°€í•©ë‹ˆë‹¤.")
+            kor = input("í•œê¸€ ë‹¨ì–´ :")
             engkor_dict[eng] = kor
             continue
-        break
 
 print(engkor_dict)
